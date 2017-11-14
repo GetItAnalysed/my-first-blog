@@ -25,7 +25,7 @@ SECRET_KEY = 'qlsu=5yk2i^n!%65v)^ilo#2@415509t5st5j(hks4%n4))gcq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['GetItAnalysed.pythonanywhere.com']
 
 
 # Application definition
@@ -50,6 +50,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+	'whitenoise.middleware.WhiteNoiseMiddleware',
 	)
 
 ROOT_URLCONF = 'mysite.urls'
